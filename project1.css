@@ -1,0 +1,24 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav1{
+    background-color: #f3ab8d;
+    color: #6c5a85;
+}
+
+.hover1:hover {
+    background-color: #945464;
+    padding: 5px;
+    border-radius: 10px;
+    color: #f3ab8d;
+    box-shadow: 0 0 4px #945464;
+    opacity: 0.9;
+    font-size: large;
+}
+
+.button{
+    background-color: #945464;
+}

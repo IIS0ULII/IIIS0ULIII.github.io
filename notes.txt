@@ -1,0 +1,84 @@
+Font Awesome Cdn: https://cdnjs.com/libraries/font-awesome
+
+Font Awesome Icons: https://fontawesome.com/icons
+
+Position Static:
+The position property isn't declared in the above code and it therefore reverts to the default position: static. It follows the order of the HTML code.
+
+Whatever comes first in the HTML is shown first, and each element follows the next, creating the document flow as I described above.
+
+Position Relative:
+
+What is position relative in CSS?
+position: relative works the same way as position: static;, but it lets you change an element's position.
+
+But just writing this CSS rule alone will not change anything.
+
+To modify the position, you'll need to apply the top, bottom, right, and left properties mentioned earlier and in that way specify where and how much you want to move the element.
+
+The top, bottom, right, and left offsets push the tag away from where it's specified, working in reverse.
+
+top in fact moves the element towards the bottom of the element's parent container. bottom pushes the element towards the top of the element's parent container, and so on.
+
+
+.one {
+  background-color: powderblue;
+  position: relative;
+  right: 50px;
+}
+
+Position Absolute:
+	Absolute-positioned elements are completely taken out of the regular flow of the web page.
+
+They are not positioned based on their usual place in the document flow, but based on the position of their ancestor.
+
+This means it will be positioned relative to the whole page itself, which means relative to the <html> element – the root of the page.
+
+The coordinates, top: 50px; and left: 0;, are therefore based on the whole page.
+
+If you want the coordinates to be applied to its parent element, you need to relatively position the parent element by updating .parent while keeping .one the same:
+
+.parent {
+  width: 500px;
+  border: 1px solid red;
+  margin: auto;
+  text-align: center;
+  position: relative;
+}
+
+.one {
+  background-color: powderblue;
+  position: absolute;
+  top: 50px;
+  left: 0;
+}
+
+---------------------------------------------
+Possible Values:  
+
+Flex-start:
+	Flex items are packed toward the start of the line.
+
+Flex-end:
+	Flex items are packed toward the end of the line.
+
+Center:
+	Flex items are packed toward the center of the line.
+
+Space-Between:
+	Flex items are evenly distributed in the line.
+
+Space-around:
+	Same as space-between, but with half-size spaces on either end.
+
+In addition, all CSS properties also accept the following CSS-wide keyword values as the sole component of their property value:
+
+Initial:
+	Represents the value specified as the property's initial value.
+
+Inherit:
+	Represents the computed value of the property on the element's parent.
+
+Unset:	
+	This value acts as either inherit or initial, depending on whether the property is inherited or not. In other words, it sets all properties to their parent value if they are inheritable or to their initial value if not inheritable.
+

@@ -1,0 +1,26 @@
+Nav Bar Class
+
+.navbar-brand for your company, product, or project name.
+
+.navbar-nav for a full-height and lightweight navigation (including support for dropdowns).
+
+.navbar-toggler - for use with our collapse plugin and other navigation toggling behaviors.
+
+Flex and spacing utilities for any form controls and actions.
+
+.navbar-text for adding vertically centered strings of text.
+
+.collapse .navbar-collapse for grouping and hiding navbar contents by a parent breakpoint.
+
+Add an optional .navbar-scroll to set a max-height and scroll expanded navbar content.
+
+
+
+data-bs-toggle="collapse"
+1. data-toggle = “collapse” It is used when you want to hide a section and make it appear only when a div is clicked. Say, the div is a button, so when the button is clicked, the section that you want to collapse appears and re-appears using the button.
+
+
+What is the use of data toggle and data-target?
+The Default Modal
+
+Notice the link element has two custom data attributes: data-toggle and data-target . The toggle tells Bootstrap what to do and the target tells Bootstrap which element is going to open. So whenever a link like that is clicked, a modal with an ID of “basicModal” will appear
